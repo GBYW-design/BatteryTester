@@ -1,0 +1,15 @@
+build/
+build-*/
+*.pro.user
+*.pro.user.*
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.db
+.qtc_clangd/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
