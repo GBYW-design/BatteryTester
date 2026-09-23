@@ -6,7 +6,7 @@
 ## 功能
 
 - 串口通信（基于 Qt SerialPort）
-- Modbus RTU 协议读写保持寄存器（0x03 功能码）
+- Modbus RTU 协议读保持寄存器（0x03 功能码）
 - 电压 / 电流 / 温度 / SOC 实时采集与显示
 - 实时曲线绘制（QChart，每秒刷新）
 - SQLite 数据库持久化测试记录与采样数据
@@ -71,13 +71,17 @@ UI 层（TestPage / DataPage / CommunicationPage ...）
 
 ## 编译与运行
 
-```bash
-# 1. 克隆项目
-git clone <仓库地址>
+### 运行步骤
+1. 克隆项目到本地：
+   ```bash
+   git clone https://gitee.com/GBYW-design/BatteryTester.git
+2. 打开 Qt Creator，选择“文件” -> “打开文件或项目”。
 
-# 2. 用 Qt Creator 打开 BatteryTester.pro
-# 3. 选择构建套件，构建并运行
-```
+3. 选中项目根目录下的 BatteryTester.pro 文件。
+
+4. 在“配置项目”界面，选择 Desktop Qt 6.11.1 MinGW 64-bit 套件，点击“配置项目”。
+
+5. 点击左下角绿色三角形（▶）进行构建并运行。
 
 ## 打包发布
 
